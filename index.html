@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="What AI Sense's farm cameras saw, farm by farm, with the original HD video.">
+<title>Farm Camera Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*{box-sizing:border-box}
+:root{--ground:#F3F5F1;--paper:#FFFFFF;--ink:#1C2A22;--muted:#5E6E64;--line:#D5DCD5;--field:#4F7A5A;--deer:#B0612A;
+--display:"Bitter",Georgia,"Times New Roman",serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root{--ground:#101612;--paper:#18201B;--ink:#E4ECE6;--muted:#9AA99F;--line:#2C3830;--field:#7FB38E;--deer:#E08A4E;color-scheme:dark}}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 var(--body)}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px;padding-block:48px 64px}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+h1{font:700 clamp(30px,5vw,44px)/1.15 var(--display);margin:0;text-wrap:balance}
+.lede{font-size:18px;max-width:640px;margin:14px 0 0}
+.sites{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:36px}
+a.site{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden;color:inherit;text-decoration:none;transition:border-color .15s}
+a.site:hover,a.site:focus-visible{border-color:var(--field);outline:none}
+a.site:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--field) 35%,transparent)}
+.thumb{aspect-ratio:16/9;width:100%;object-fit:cover;display:block;background:#000}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.farm{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+h2{font:700 21px/1.25 var(--display);margin:0}
+.dates{font:400 13px var(--mono);color:var(--muted)}
+.key{margin:6px 0 0;font-size:15px}
+.key strong{color:var(--deer)}
+.go{margin-top:8px;font:500 14px var(--body);color:var(--field)}
+footer{margin-top:48px;color:var(--muted);font-size:14px;max-width:640px}
+@media (prefers-reduced-motion:reduce){a.site{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="eyebrow">AI Sense · AICoexist field cameras</div>
+<h1>Farm camera reports</h1>
+<p class="lede">What our cameras saw at each farm. Pick a farm to see its report: every finding was checked by eye, and the original HD videos play right on the page.</p>
+<div class="sites">
+<a class="site" href="chirandu/">
+<img class="thumb" src="chirandu/img/deer3.jpg" alt="Two deer grazing by the greenhouses at dawn, Chirandu Farms">
+<div class="body"><span class="farm">Chirandu Farms</span><h2>How often did deer come?</h2><span class="dates">17 Aug – 20 Sep 2026 · 3 cameras</span>
+<p class="key"><strong>1 deer visit</strong> in five weeks, in the vegetable field at dawn. Foxes on 21 of 35 nights.</p><span class="go">Open report →</span></div></a>
+<a class="site" href="maes/">
+<img class="thumb" src="maes/s/V27_pod1.jpg" alt="A deer at the MAES barn camera at night">
+<div class="body"><span class="farm">MAES</span><h2>Did the deer run when the sound played?</h2><span class="dates">20 Aug – 12 Sep 2026 · barn camera + sound pod</span>
+<p class="key"><strong>31 deer visits</strong>; 22 had a deterrent sound. The deer clearly ran in only 2 of them and stayed through it in 7.</p><span class="go">Open report →</span></div></a>
+</div>
+<footer>More farms will be added as their reviews are finished. Reports cover only what each camera could see during the dates shown.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Every HD clip from Chirandu Farms cameras, 17 Aug to 20 Sep 2026, checked for deer.">
+<style>body{margin:0}img,video{max-width:100%}*{box-sizing:border-box}</style>
+<title>Chirandu Deer Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ground:#F3F5F1;--paper:#FFFFFF;--ink:#1C2A22;--muted:#5E6E64;--line:#D5DCD5;--field:#4F7A5A;--fieldsoft:#DCE8DE;--deer:#B0612A;--deersoft:#F4E1D2;--down:#9A4B4B;
+--display:"Bitter",Georgia,"Times New Roman",serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#101612;--paper:#18201B;--ink:#E4ECE6;--muted:#9AA99F;--line:#2C3830;--field:#7FB38E;--fieldsoft:#22332A;--deer:#E08A4E;--deersoft:#3A2618;--down:#D07F7F;color-scheme:dark}}
+:root[data-theme="dark"]{--ground:#101612;--paper:#18201B;--ink:#E4ECE6;--muted:#9AA99F;--line:#2C3830;--field:#7FB38E;--fieldsoft:#22332A;--deer:#E08A4E;--deersoft:#3A2618;--down:#D07F7F;color-scheme:dark}
+body{background:var(--ground);color:var(--ink);font:16px/1.6 var(--body)}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px;padding-block:40px 64px}
+.col{max-width:720px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(22px,3vw,28px);font-weight:700;margin-top:56px;margin-bottom:12px}
+h3{font-size:18px;font-weight:700;margin-bottom:6px}
+p{margin:0 0 14px}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.lede{font-size:19px;margin-top:16px}
+.answer{margin-top:28px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--deer);border-radius:6px;padding:20px 22px}
+.answer strong{color:var(--deer)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:22px}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.fact b{display:block;font:700 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.fact span{color:var(--muted);font-size:14px}
+figure{margin:22px 0 0}
+figure img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
+figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+.pair{display:grid;grid-template-columns:3fr 2fr;gap:14px;align-items:start}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mono{font-family:var(--mono);font-size:14px}
+.chart{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 12px;overflow-x:auto;margin-top:18px}
+.chart svg{display:block;width:100%;min-width:560px;height:auto}
+.grid{stroke:var(--line);stroke-width:1}
+.tick{fill:var(--muted);font:11px var(--mono)}
+.lab{fill:var(--ink);font:13px var(--body)}
+.note{fill:var(--muted);font:12px var(--body)}
+.on{fill:var(--field);opacity:.8}
+.down{stroke:var(--down);stroke-width:2;stroke-dasharray:4 3}
+.deer{fill:var(--deer);stroke:var(--paper);stroke-width:2}
+.deerlab{fill:var(--deer);font:600 12px var(--body)}
+.dot{fill:var(--field);opacity:.75}
+.tablewrap{overflow-x:auto;margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
+th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+thead th{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+tbody th{font-weight:500}
+td.num{position:relative;width:18%;font-variant-numeric:tabular-nums}
+td.tot{width:8%;font-weight:600;text-align:right}
+.bar{position:absolute;left:12px;top:50%;transform:translateY(-50%);height:14px;width:calc((100% - 60px) * var(--w) / 100);background:var(--fieldsoft);border-radius:2px}
+.deerbar{background:var(--deer)}
+.n{position:relative;padding-left:4px}
+tr.deerrow th,tr.deerrow td{color:var(--deer);font-weight:600}
+ol.recs{padding-left:22px;margin:0}
+ol.recs li{margin-bottom:14px}
+.method{font-size:15px;color:var(--muted)}
+.method strong{color:var(--ink)}
+.vids{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.duo{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+figure video{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);background:#000}
+.vidnote{color:var(--muted);font-size:14px;margin-top:10px}
+.crumbs{font:500 13px var(--mono);margin-bottom:22px;color:var(--muted)}
+.crumbs a{color:var(--field);text-decoration:none}
+.crumbs a:hover,.crumbs a:focus-visible{text-decoration:underline}
+hr{border:0;border-top:1px solid var(--line);margin:56px 0 0}
+@media (max-width:720px){.pair,.trio,.vids,.duo{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<nav class="crumbs"><a href="../">All sites</a> <span aria-hidden="true">/</span> Chirandu Farms</nav><div class="col">
+<div class="eyebrow">Chirandu Farms · AI Sense camera review · 17 Aug – 20 Sep 2026</div>
+<h1>How often did deer come to Chirandu?</h1>
+<p class="lede">We went through every video the farm's cameras recorded over five weeks: 41,729 short HD clips. Every clip that showed anything animal-shaped was checked by eye.</p>
+<div class="answer"><p style="margin:0">In five weeks the cameras caught <strong>one deer visit</strong>: two deer grazing in the vegetable field by the greenhouses at first light on <strong>Saturday 19 September, 6:32–6:35 am</strong>. None came past the two corn cameras. Foxes were the regular visitor, on 21 of the 35 nights.</p></div>
+</div>
+<div class="facts">
+<div class="fact"><b>41,729</b><span>HD clips recorded (6 s each)</span></div>
+<div class="fact"><b>2,006</b><span>events checked by eye, each deer call checked twice</span></div>
+<div class="fact"><b>1</b><span>deer visit (2 deer, about 3 minutes)</span></div>
+<div class="fact"><b>21 / 35</b><span>nights with a fox on camera</span></div>
+</div>
+
+<h2>The one deer visit</h2>
+<div class="vids"><figure><video controls playsinline preload="metadata" poster="img/deer1.jpg" aria-label="Deer clip 1"><source src="v/deer1.mp4" type="video/mp4"></video><figcaption>6:32:10 am. The first deer walks into the middle of the field.</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/deer2.jpg" aria-label="Deer clip 2"><source src="v/deer2.mp4" type="video/mp4"></video><figcaption>6:32:54 am. Grazing, head down.</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/deer3.jpg" aria-label="Deer clip 3"><source src="v/deer3.mp4" type="video/mp4"></video><figcaption>6:34:02 am. Both deer grazing side by side.</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/deer4.jpg" aria-label="Deer clip 4"><source src="v/deer4.mp4" type="video/mp4"></video><figcaption>6:34:46 am. Last clip before they moved off.</figcaption></figure></div><p class="vidnote">Veggies camera, Saturday 19 Sep 2026. These are the camera's own HD recordings (1080p), about 3 minutes in total.</p>
+
+<div class="col">
+<h2>When each camera was recording</h2>
+<p>The cameras didn't all run the whole time. The gate camera never sent a video. Both corn cameras stopped on the morning of 12 September, and the whole system went offline on 21 September, so the last week isn't covered.</p>
+</div>
+<div class="chart"><svg viewBox="0 0 760 198" role="img" aria-label="Days each camera recorded, 17 Aug to 24 Sep 2026"><line x1="96.0" y1="22" x2="96.0" y2="164" class="grid"/><text x="96.0" y="18" class="tick" text-anchor="middle">17 Aug</text><line x1="215.4" y1="22" x2="215.4" y2="164" class="grid"/><text x="215.4" y="18" class="tick" text-anchor="middle">24 Aug</text><line x1="334.7" y1="22" x2="334.7" y2="164" class="grid"/><text x="334.7" y="18" class="tick" text-anchor="middle">31 Aug</text><line x1="454.1" y1="22" x2="454.1" y2="164" class="grid"/><text x="454.1" y="18" class="tick" text-anchor="middle">7 Sep</text><line x1="573.5" y1="22" x2="573.5" y2="164" class="grid"/><text x="573.5" y="18" class="tick" text-anchor="middle">14 Sep</text><line x1="692.8" y1="22" x2="692.8" y2="164" class="grid"/><text x="692.8" y="18" class="tick" text-anchor="middle">21 Sep</text><text x="86" y="49.0" class="lab" text-anchor="end">Gate</text><text x="102" y="49.0" class="note">never sent a video</text><text x="86" y="83.0" class="lab" text-anchor="end">Veggies</text><rect x="96.0" y="70" width="596.8" height="18" rx="3" class="on"/><text x="86" y="117.0" class="lab" text-anchor="end">Corn right</text><rect x="96.0" y="104" width="460.4" height="18" rx="3" class="on"/><text x="86" y="151.0" class="lab" text-anchor="end">Corn left</text><rect x="96.0" y="138" width="460.4" height="18" rx="3" class="on"/><circle cx="665.7" cy="79.0" r="7" class="deer"/><line x1="692.8" y1="28" x2="692.8" y2="164" class="down"/><text x="696.8" y="182" class="note">system offline from 21 Sep</text><text x="654.7" y="182" class="deerlab" text-anchor="end">deer visit, 19 Sep</text></svg></div>
+
+<div class="col">
+<h2>What else came through</h2>
+<p>Foxes were the steady visitor, almost always between 9 pm and 6 am, with a burst around 5 am. Raccoons, groundhogs, cats, rabbits and a skunk showed up a handful of times each. People working in the fields account for the daytime triggers.</p>
+</div>
+<div class="chart"><svg viewBox="0 0 760 200" role="img" aria-label="When each kind of visitor showed up, by hour of day"><line x1="96.0" y1="20" x2="96.0" y2="174" class="grid"/><text x="96.0" y="192" class="tick" text-anchor="middle">00:00</text><line x1="180.5" y1="20" x2="180.5" y2="174" class="grid"/><text x="180.5" y="192" class="tick" text-anchor="middle">03:00</text><line x1="265.0" y1="20" x2="265.0" y2="174" class="grid"/><text x="265.0" y="192" class="tick" text-anchor="middle">06:00</text><line x1="349.6" y1="20" x2="349.6" y2="174" class="grid"/><text x="349.6" y="192" class="tick" text-anchor="middle">09:00</text><line x1="434.1" y1="20" x2="434.1" y2="174" class="grid"/><text x="434.1" y="192" class="tick" text-anchor="middle">12:00</text><line x1="518.6" y1="20" x2="518.6" y2="174" class="grid"/><text x="518.6" y="192" class="tick" text-anchor="middle">15:00</text><line x1="603.1" y1="20" x2="603.1" y2="174" class="grid"/><text x="603.1" y="192" class="tick" text-anchor="middle">18:00</text><line x1="687.7" y1="20" x2="687.7" y2="174" class="grid"/><text x="687.7" y="192" class="tick" text-anchor="middle">21:00</text><text x="86" y="43.0" class="lab" text-anchor="end">Foxes</text><circle cx="96.0" cy="39.0" r="9.1" class="dot"><title>Foxes: 7 events starting 00:00-00:59</title></circle><circle cx="715.8" cy="39.0" r="9.6" class="dot"><title>Foxes: 8 events starting 22:00-22:59</title></circle><circle cx="265.0" cy="39.0" r="5.3" class="dot"><title>Foxes: 1 event starting 06:00-06:59</title></circle><circle cx="236.9" cy="39.0" r="11.4" class="dot"><title>Foxes: 13 events starting 05:00-05:59</title></circle><circle cx="180.5" cy="39.0" r="6.3" class="dot"><title>Foxes: 2 events starting 03:00-03:59</title></circle><circle cx="659.5" cy="39.0" r="6.3" class="dot"><title>Foxes: 2 events starting 20:00-20:59</title></circle><circle cx="208.7" cy="39.0" r="8.2" class="dot"><title>Foxes: 5 events starting 04:00-04:59</title></circle><circle cx="687.7" cy="39.0" r="7.0" class="dot"><title>Foxes: 3 events starting 21:00-21:59</title></circle><circle cx="744.0" cy="39.0" r="9.6" class="dot"><title>Foxes: 8 events starting 23:00-23:59</title></circle><circle cx="124.2" cy="39.0" r="8.2" class="dot"><title>Foxes: 5 events starting 01:00-01:59</title></circle><circle cx="152.3" cy="39.0" r="7.6" class="dot"><title>Foxes: 4 events starting 02:00-02:59</title></circle><circle cx="377.7" cy="39.0" r="5.3" class="dot"><title>Foxes: 1 event starting 10:00-10:59</title></circle><circle cx="490.4" cy="39.0" r="5.3" class="dot"><title>Foxes: 1 event starting 14:00-14:59</title></circle><text x="86" y="73.0" class="lab" text-anchor="end">People</text><circle cx="293.2" cy="69.0" r="10.7" class="dot"><title>People: 11 events starting 07:00-07:59</title></circle><circle cx="377.7" cy="69.0" r="9.6" class="dot"><title>People: 8 events starting 10:00-10:59</title></circle><circle cx="434.1" cy="69.0" r="12.0" class="dot"><title>People: 15 events starting 12:00-12:59</title></circle><circle cx="518.6" cy="69.0" r="5.3" class="dot"><title>People: 1 event starting 15:00-15:59</title></circle><circle cx="405.9" cy="69.0" r="11.0" class="dot"><title>People: 12 events starting 11:00-11:59</title></circle><circle cx="462.3" cy="69.0" r="8.7" class="dot"><title>People: 6 events starting 13:00-13:59</title></circle><circle cx="603.1" cy="69.0" r="6.3" class="dot"><title>People: 2 events starting 18:00-18:59</title></circle><circle cx="321.4" cy="69.0" r="11.0" class="dot"><title>People: 12 events starting 08:00-08:59</title></circle><circle cx="349.6" cy="69.0" r="7.0" class="dot"><title>People: 3 events starting 09:00-09:59</title></circle><circle cx="575.0" cy="69.0" r="6.3" class="dot"><title>People: 2 events starting 17:00-17:59</title></circle><text x="86" y="103.0" class="lab" text-anchor="end">Birds</text><circle cx="405.9" cy="99.0" r="10.7" class="dot"><title>Birds: 11 events starting 11:00-11:59</title></circle><circle cx="490.4" cy="99.0" r="10.0" class="dot"><title>Birds: 9 events starting 14:00-14:59</title></circle><circle cx="603.1" cy="99.0" r="12.0" class="dot"><title>Birds: 15 events starting 18:00-18:59</title></circle><circle cx="659.5" cy="99.0" r="7.6" class="dot"><title>Birds: 4 events starting 20:00-20:59</title></circle><circle cx="434.1" cy="99.0" r="8.2" class="dot"><title>Birds: 5 events starting 12:00-12:59</title></circle><circle cx="546.8" cy="99.0" r="8.7" class="dot"><title>Birds: 6 events starting 16:00-16:59</title></circle><circle cx="462.3" cy="99.0" r="9.1" class="dot"><title>Birds: 7 events starting 13:00-13:59</title></circle><circle cx="575.0" cy="99.0" r="8.2" class="dot"><title>Birds: 5 events starting 17:00-17:59</title></circle><circle cx="518.6" cy="99.0" r="7.6" class="dot"><title>Birds: 4 events starting 15:00-15:59</title></circle><circle cx="349.6" cy="99.0" r="9.6" class="dot"><title>Birds: 8 events starting 09:00-09:59</title></circle><circle cx="377.7" cy="99.0" r="10.3" class="dot"><title>Birds: 10 events starting 10:00-10:59</title></circle><circle cx="321.4" cy="99.0" r="7.0" class="dot"><title>Birds: 3 events starting 08:00-08:59</title></circle><circle cx="631.3" cy="99.0" r="7.6" class="dot"><title>Birds: 4 events starting 19:00-19:59</title></circle><circle cx="236.9" cy="99.0" r="5.3" class="dot"><title>Birds: 1 event starting 05:00-05:59</title></circle><circle cx="265.0" cy="99.0" r="5.3" class="dot"><title>Birds: 1 event starting 06:00-06:59</title></circle><circle cx="293.2" cy="99.0" r="5.3" class="dot"><title>Birds: 1 event starting 07:00-07:59</title></circle><text x="86" y="133.0" class="lab" text-anchor="end">Raccoons</text><circle cx="152.3" cy="129.0" r="6.3" class="dot"><title>Raccoons: 2 events starting 02:00-02:59</title></circle><circle cx="208.7" cy="129.0" r="7.0" class="dot"><title>Raccoons: 3 events starting 04:00-04:59</title></circle><circle cx="715.8" cy="129.0" r="5.3" class="dot"><title>Raccoons: 1 event starting 22:00-22:59</title></circle><circle cx="96.0" cy="129.0" r="5.3" class="dot"><title>Raccoons: 1 event starting 00:00-00:59</title></circle><circle cx="180.5" cy="129.0" r="5.3" class="dot"><title>Raccoons: 1 event starting 03:00-03:59</title></circle><text x="86" y="163.0" class="lab" text-anchor="end">Deer</text><circle cx="265.0" cy="159.0" r="5.3" class="deer"><title>Deer: 1 event starting 06:00-06:59</title></circle></svg></div>
+<div class="trio"><figure><video controls playsinline preload="metadata" poster="img/fox1.jpg" aria-label="Fox clip"><source src="v/fox1.mp4" type="video/mp4"></video><figcaption>Fox, Veggies camera, 18 Sep 2:39 am</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/insect.jpg" aria-label="Insect clip"><source src="v/insect.mp4" type="video/mp4"></video><figcaption>Most night triggers look like this: an insect flying through the camera's infrared light.</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/pipe.jpg" aria-label="Pipe clip"><source src="v/pipe.mp4" type="video/mp4"></video><figcaption>A black pipe or tarp in the grass by Corn right that the software kept flagging as an animal.</figcaption></figure></div><div class="duo"><figure><video controls playsinline preload="metadata" poster="img/fox2.jpg" aria-label="Fox clip 2"><source src="v/fox2.mp4" type="video/mp4"></video><figcaption>Fox, Corn left camera, 24 Aug 5:17 am</figcaption></figure><figure><video controls playsinline preload="metadata" poster="img/fox3.jpg" aria-label="Fox clip 3"><source src="v/fox3.mp4" type="video/mp4"></video><figcaption>Fox, Corn left camera, 29 Aug 3:12 am</figcaption></figure></div>
+
+<div class="col">
+<h2>What set the cameras off</h2>
+<p>Of the 41,729 clips, about 9,000 had something the software thought was an animal. We grouped those into 3,419 events and checked 2,006 of them by eye. The rest were one fixed object seen over and over in the same spot; we spot-checked those too. Almost everything was insects, fixed objects, people or birds.</p>
+</div>
+<div class="tablewrap"><table>
+<thead><tr><th scope="col">What it was (events checked by eye)</th><th scope="col">Veggies</th><th scope="col">Corn right</th><th scope="col">Corn left</th><th scope="col" style="text-align:right">All</th></tr></thead>
+<tbody><tr><th scope="row">Insects in the night light</th><td class="num"><span class="bar" style="--w:67.4%"></span><span class="n">261</span></td><td class="num"><span class="bar" style="--w:55.0%"></span><span class="n">213</span></td><td class="num"><span class="bar" style="--w:57.4%"></span><span class="n">222</span></td><td class="num tot">696</td></tr><tr><th scope="row">Things that don't move (pipe, sign, box)</th><td class="num"><span class="bar" style="--w:69.5%"></span><span class="n">269</span></td><td class="num"><span class="bar" style="--w:100.0%"></span><span class="n">387</span></td><td class="num"><span class="bar" style="--w:3.1%"></span><span class="n">12</span></td><td class="num tot">668</td></tr><tr><th scope="row">Nothing visible</th><td class="num"><span class="bar" style="--w:28.7%"></span><span class="n">111</span></td><td class="num"><span class="bar" style="--w:25.6%"></span><span class="n">99</span></td><td class="num"><span class="bar" style="--w:8.0%"></span><span class="n">31</span></td><td class="num tot">241</td></tr><tr><th scope="row">People working</th><td class="num"><span class="bar" style="--w:10.1%"></span><span class="n">39</span></td><td class="num"><span class="bar" style="--w:5.4%"></span><span class="n">21</span></td><td class="num"><span class="bar" style="--w:3.1%"></span><span class="n">12</span></td><td class="num tot">72</td></tr><tr><th scope="row">Birds</th><td class="num"><span class="bar" style="--w:7.2%"></span><span class="n">28</span></td><td class="num"><span class="bar" style="--w:11.1%"></span><span class="n">43</span></td><td class="num"><span class="bar" style="--w:5.9%"></span><span class="n">23</span></td><td class="num tot">94</td></tr><tr><th scope="row">Tractors and vehicles</th><td class="num"><span class="bar" style="--w:4.4%"></span><span class="n">17</span></td><td class="num"><span class="bar" style="--w:0.3%"></span><span class="n">1</span></td><td class="num"><span class="bar" style="--w:0.3%"></span><span class="n">1</span></td><td class="num tot">19</td></tr><tr><th scope="row">Foxes</th><td class="num"><span class="bar" style="--w:2.1%"></span><span class="n">8</span></td><td class="num"><span class="bar" style="--w:7.8%"></span><span class="n">30</span></td><td class="num"><span class="bar" style="--w:5.7%"></span><span class="n">22</span></td><td class="num tot">60</td></tr><tr><th scope="row">Raccoons, groundhogs, cats, rabbits, skunk, opossum</th><td class="num"><span class="bar" style="--w:2.1%"></span><span class="n">8</span></td><td class="num"><span class="bar" style="--w:2.8%"></span><span class="n">11</span></td><td class="num"><span class="bar" style="--w:2.3%"></span><span class="n">9</span></td><td class="num tot">28</td></tr><tr><th scope="row">Unclear shapes, checked twice: not deer</th><td class="num"><span class="bar" style="--w:14.0%"></span><span class="n">54</span></td><td class="num"><span class="bar" style="--w:12.4%"></span><span class="n">48</span></td><td class="num"><span class="bar" style="--w:6.5%"></span><span class="n">25</span></td><td class="num tot">127</td></tr><tr class=deerrow><th scope="row">Deer</th><td class="num"><span class="bar deerbar" style="--w:0.3%"></span><span class="n">1</span></td><td class="num"><span class="bar deerbar" style="--w:0.0%"></span><span class="n">0</span></td><td class="num"><span class="bar deerbar" style="--w:0.0%"></span><span class="n">0</span></td><td class="num tot">1</td></tr></tbody></table></div>
+
+<div class="col">
+<h2>So where and when would a sound pod help?</h2>
+<ol class="recs">
+<li><strong>Ask where the damage is before placing anything.</strong> In five weeks only one deer visit crossed these cameras, so either deer are light here right now, or they come in where the cameras aren't looking. If the farm sees browsing or tracks somewhere specific, that's where the cameras and the sound pod belong.</li>
+<li><strong>If one pod goes in now, put it at the vegetable field by the greenhouses.</strong> That's the only spot deer were seen, in the middle of the Veggies camera's view. Aim it across the field toward the tree line they came from.</li>
+<li><strong>Run it from dusk until about 7:30 am, with the most attention 5:30–7:30 am.</strong> The only visit was at first light, and deer here are most active at dawn and dusk.</li>
+<li><strong>It must only react to deer.</strong> Nearly every trigger was an insect in the night light, a fixed object, a bird or a person. A speaker set off by motion alone would sound all night and teach deer to ignore it.</li>
+<li><strong>Get the cameras back and keep them running into November.</strong> Fix the gate camera, restart the two corn cameras, and bring the system back online. Deer movement picks up in October–November as the rut starts and the corn comes out, so the next weeks will say far more than late summer did.</li>
+</ol>
+</div>
+
+<hr>
+<div class="col method">
+<h2 style="color:var(--ink)">How we checked</h2>
+<p><strong>Every clip was screened.</strong> We ran the same animal-detection models the AI Sense platform uses (MegaDetector and SpeciesNet) over all 41,729 HD clips from the Veggies, Corn right and Corn left cameras, two frames per second. 51 clips were damaged and couldn't be read.</p>
+<p><strong>Every possible animal was looked at.</strong> Clips with anything animal-shaped were grouped into events a few minutes long. 2,006 events were reviewed by eye on full-resolution frames. Every event called "deer" or "unclear" got a second, independent look aimed at ruling it out. The two night-time calls that survived were then checked frame by frame and turned out to be moths close to the lens.</p>
+<p><strong>We looked for deer we might have missed.</strong> We checked a further 300 clips the review never saw: 154 random clips where the software found nothing (mostly night, dusk and dawn), 145 of the "fixed object" events, and the one leftover clip the software had labelled as deer. None had a deer.</p>
+<p><strong>Limits.</strong> Cameras only see their own view. The gate camera never recorded, the corn cameras stopped on 12 September, and nothing after 20 September is covered. A deer standing very far off in the dark could still slip past the software, but the one real visit was picked up with high confidence.</p>
+</div>
+</div>
+</body>
+</html>
